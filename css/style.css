@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+#Login {
+  display: flex;
+  min-height: 100vh;
+}
+
+.gambarBG {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background-color: #f3f4f6;
+}
+
+.gambarBG .ilustrasi {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gambarBG .logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 100px;
+  height: auto;
+  z-index: 10;
+}
+
+.formLogin {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
+  background-color: #ffffff;
+}
+
+.formLogin h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.formLogin p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #444;
+}
+
+form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  margin-bottom: 24px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #0056b3;
+}
+
+.rememberNlupapassword {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.RememberMe {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.RememberMe input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: #0056b3;
+}
+
+.RememberMe label {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #444;
+  cursor: pointer;
+}
+
+.lupapassword {
+  font-size: 14px;
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.lupapassword:hover {
+  text-decoration: underline;
+}
+
+.forgot p a {
+  font-size: 14px;
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.forgot p a:hover {
+  text-decoration: underline;
+}
+
+button[type="submit"] {
+  padding: 13px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  margin-bottom: 24px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #004494;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+  color: #666;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.divider span {
+  padding: 0 15px;
+}
+
+button[type="button"] {
+  padding: 13px;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+button[type="button"] img {
+  width: 20px;
+  height: auto;
+}
+
+button[type="button"]:hover {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  #Login {
+    flex-direction: column;
+  }
+
+  .gambarBG {
+    display: none;
+  }
+
+  .formLogin {
+    padding: 32px;
+    align-items: center;
+  }
+}

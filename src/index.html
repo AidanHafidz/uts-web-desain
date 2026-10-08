@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ujian Tengah Semester Desain Web</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section id="Login">
+        <div class="gambarBG">
+          <img class="logo" src="../img/logo ah baru.png" alt="Logo" />
+          <img class="ilustrasi" src="../img/Ilustrasi.png" alt="Ilustrasi" />
+        </div>
+
+        <div class="formLogin">
+          <h1>Selamat Datang Tuan!</h1>
+          <p>Silahkan login ke akun anda</p>
+
+          <form action="../php/login.php" method="POST">
+            <label for="username">Username atau Email</label>
+            <input
+              type="text"
+              name="username/email"
+              id="username"
+              placeholder="Username atau Email"
+              required
+            />
+
+            <label for="password">Password</label>
+            <div class="password-container">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="********"
+                required
+              />
+            </div>
+
+            <div class="rememberNlupapassword">
+              <div class="RememberMe">
+                <input type="checkbox" name="remember" id="remember" />
+                <label for="remember">Ingat saya</label>
+              </div>
+
+              <a href="../src/lupapasword.html" class="lupapassword"
+                >Lupa Password?</a
+              >
+            </div>
+
+            <button type="submit">Login</button>
+
+            <div class="divider">
+              <span>or</span>
+            </div>
+
+            <button type="button" class="google">
+              <img src="../img/search.png" alt="Google Logo" />
+              Lanjutkan dengan Google
+            </button>
+
+            <div class="forgot">
+              <p>
+                Belum punya akun? <a href="../html/register.html">Daftar</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
